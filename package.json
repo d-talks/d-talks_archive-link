@@ -17,5 +17,8 @@
     "pug": "2.0.0-beta11",
     "request": "^2.88.0",
     "yiq": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-node": "^9.1.0"
   }
 }

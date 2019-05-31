@@ -1,28 +1,15 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "commonjs": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "ecmaVersion": 5
-    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:node/recommended"
+    ],
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+        "node/no-unsupported-features/es-syntax": ["error", {
+            "version": ">=8.0.0",
+            "ignores": []
+        }]
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
 };
