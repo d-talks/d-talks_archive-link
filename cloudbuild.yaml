@@ -2,6 +2,5 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/d-talks-243604/d-talks_link-archive:$SHORT_SHA', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['service', 'update', '--force', 'detalks_archive_app']
-images: ['gcr.io/d-talks-243604/d-talks_link-archive:$SHORT_SHA']
-tags: ['latest']
+    args: ['tag', 'gcr.io/d-talks-243604/d-talks_link-archive:$SHORT_SHA', 'gcr.io/d-talks-243604/d-talks_link-archive:latest']
+images: ['gcr.io/d-talks-243604/d-talks_link-archive:latest']
