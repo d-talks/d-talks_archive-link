@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/d-talks-243604/d-talks_link-archive', '.']
+images: ['gcr.io/d-talks-243604/d-talks_link-archive']
+tags: ['$SHORT_SHA', 'latest']
