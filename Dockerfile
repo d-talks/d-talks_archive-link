@@ -1,6 +1,7 @@
 FROM node:8
 
-WORKDIR /usr/src/app
+RUN mkdir -p /app
+WORKDIR /app
 
 COPY . .
 
