@@ -5,7 +5,8 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN yarn
+RUN npm install pm2 -g
 
 EXPOSE 3000
 
-CMD [ "yarn", "start" ]
+CMD [ "pm2-runtime", "ecosystem.config.js", "--env", "production" ]
