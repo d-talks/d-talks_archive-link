@@ -1,12 +1,11 @@
 FROM node:8
 
-RUN mkdir -p /app
-WORKDIR /app
+WORKDIR /usr/src/app
 
 COPY . .
 
 RUN yarn
 
-EXPOSE 8080
+EXPOSE 3000
 
 CMD [ "yarn", "start" ]
