@@ -5,6 +5,8 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN yarn
+RUN yarn run build
+
 RUN npm install pm2 -g
 
 EXPOSE 3000
