@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'd-talks_link-archive',
-      script: 'yarn run start',
+      script: './server/index.js',
       env: {
         PORT: 3000,
         NODE_ENV: 'development'
