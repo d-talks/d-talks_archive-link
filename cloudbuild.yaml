@@ -3,6 +3,6 @@ steps:
     args: ['build', '-t', 'gcr.io/d-talks-243604/d-talks_link-archive:$SHORT_SHA', '.']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['tag', 'gcr.io/d-talks-243604/d-talks_link-archive:$SHORT_SHA', 'gcr.io/d-talks-243604/d-talks_link-archive:latest']
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['compute', 'ssh', 'cto_onestepmore_co_kr@achive-application', '--zone', 'asia-northeast1-b', '--command', 'docker service update dtalks_archive_app --force']
+  # - name: 'gcr.io/cloud-builders/gcloud'
+  #   args: ['compute', 'ssh', 'cto_onestepmore_co_kr@achive-application', '--zone', 'asia-northeast1-b', '--command', 'docker service update dtalks_archive_app --force']
 images: ['gcr.io/d-talks-243604/d-talks_link-archive:latest']
