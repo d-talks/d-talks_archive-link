@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-express-test",
+  "name": "d-talsk_link-archive",
   "version": "1.0.0",
-  "description": "My excellent Nuxt.js project",
+  "description": "D Talks toy project",
   "author": "ohsung cho",
   "private": true,
   "scripts": {
