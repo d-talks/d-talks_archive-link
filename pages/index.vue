@@ -8,6 +8,7 @@
         D-talks toy projects
       </h2>
     </div>
+    <a href="/aboutus">aboutus</a>
   </div>
 </template>
 
@@ -15,4 +16,4 @@
 export default {}
 </script>
 
-<style lang="scss" module scoped></style>
+<style lang="css" module scoped></style>

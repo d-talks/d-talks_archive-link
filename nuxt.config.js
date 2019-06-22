@@ -23,7 +23,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~assets/sass/app'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -57,6 +57,14 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+      }
+    }
+  },
+
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type)
       }
     }
   },

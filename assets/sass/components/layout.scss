@@ -1,0 +1,129 @@
+.layout-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.layout-title span {
+  font-size: 18px;
+}
+
+.layout-title .txt-1920 {
+  display: inline-block;
+}
+
+.layout-title .txt-1280 {
+  display: none;
+}
+
+/* 유네님 레이아웃 */
+.layout-view {
+  width: 1200px;
+  height: 800px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.layout-card-view {
+  width: 1200px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.layout-column {
+  width: 60px;
+  height: 100%;
+  background: magenta;
+  opacity: 0.4;
+  display: block;
+  float: left;
+}
+
+.layout-margin {
+  width: 40px;
+  height: 100%;
+  background: #dddd;
+  opacity: 0.4;
+  display: block;
+  float: left;
+}
+
+.card-ui {
+  width: 260px;
+  height: 260px;
+  background: #fff;
+  border: 4px solid pink;
+  box-sizing: border-box;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+/* 제안 레이아웃 */
+.layout-view.version2 {
+  width: 1190px;
+  height: 800px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.layout-card-view.version2 {
+  width: 1200px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.layout-column.version2 {
+  width: 90px;
+  height: 100%;
+  background: magenta;
+  opacity: 0.4;
+  display: block;
+  float: left;
+}
+
+.layout-margin.version2 {
+  width: 10px;
+  height: 100%;
+  background: #dddd;
+  opacity: 0.4;
+  display: block;
+  float: left;
+}
+
+.card-ui.version2 {
+  width: 290px;
+  height: 290px;
+  background: #fff;
+  border: 4px solid pink;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+@media (max-width: 1280px) {
+  .layout-view {
+    width: 900px;
+  }
+
+  .layout-view.version2 {
+    width: 890px;
+  }
+
+  .layout-title .txt-1920 {
+    display: none;
+  }
+
+  .layout-title .txt-1280 {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "dtalks-icons";
+	src: url("dtalks-icons.eot?723c82a55b1fbcad25212dc94568d428?#iefix") format("embedded-opentype"),
+url("dtalks-icons.woff2?723c82a55b1fbcad25212dc94568d428") format("woff2"),
+url("dtalks-icons.woff?723c82a55b1fbcad25212dc94568d428") format("woff");
+}
+
+.dtalks-icons {
+	line-height: 1;
+}
+
+.dtalks-icons:before {
+	font-family: dtalks-icons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.dtalks-icons-icon_article:before {
+	content: "\f101";
+}
+.dtalks-icons-icon_awards:before {
+	content: "\f102";
+}
+.dtalks-icons-icon_company:before {
+	content: "\f103";
+}
+.dtalks-icons-icon_education:before {
+	content: "\f104";
+}
+.dtalks-icons-icon_gallery:before {
+	content: "\f105";
+}
+.dtalks-icons-icon_portfolio:before {
+	content: "\f106";
+}
+.dtalks-icons-icon_shopping:before {
+	content: "\f107";
+}
