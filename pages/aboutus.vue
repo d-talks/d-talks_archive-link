@@ -8,7 +8,7 @@
           <ohsung-card></ohsung-card>
         </div>
         <div class="col-3">
-          <yh-card></yh-card>
+          <yunhye-card></yunhye-card>
         </div>
         <div class="col-3">
           <hong-ui-card></hong-ui-card>
@@ -20,13 +20,13 @@
 
 <script>
 import OhsungCard from '~/components/card/Ohsung'
-import YhCard from '~/components/card/Yh'
+import YunhyeCard from '~/components/card/Yunhye'
 import HongUiCard from '~/components/card/HongUi'
 
 export default {
   components: {
     OhsungCard,
-    YhCard,
+    YunhyeCard,
     HongUiCard
   }
 }
