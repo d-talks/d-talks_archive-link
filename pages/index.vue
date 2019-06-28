@@ -1,19 +1,23 @@
 <template>
   <div class="container">
-    <div>
-      <h1 class="title">
-        D-Talks Link Archive !
-      </h1>
-      <h2 class="subtitle">
-        D-talks toy projects
-      </h2>
+    <div class="layout grid-list wrap">
+      <template v-for="i in 20">
+        <div :key="i" class="col-3">
+          <yh-card></yh-card>
+        </div>
+      </template>
     </div>
-    <a href="/aboutus">aboutus</a>
   </div>
 </template>
 
 <script>
-export default {}
+import YhCard from '~/components/card/Yh'
+
+export default {
+  components: {
+    YhCard
+  }
+}
 </script>
 
 <style lang="css" module scoped></style>

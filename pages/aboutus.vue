@@ -1,31 +1,33 @@
 <template>
   <div>
-    <h1>About US</h1>
+    <div class="h3">About US</div>
 
-    <ul class="list">
-      <li>
-        <fifthsage-card></fifthsage-card>
-      </li>
-      <li>
-        <yh-card></yh-card>
-      </li>
-      <li>
-        <uihong-card></uihong-card>
-      </li>
-    </ul>
+    <div class="container mt-5">
+      <div class="layout grid-list wrap">
+        <div class="col-3">
+          <fifthsage-card></fifthsage-card>
+        </div>
+        <div class="col-3">
+          <yh-card></yh-card>
+        </div>
+        <div class="col-3">
+          <hong-ui-card></hong-ui-card>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import FifthsageCard from '~/components/card/fifthsage'
-import YhCard from '~/components/card/yh'
-import UihongCard from '~/components/card/ui-hong'
+import FifthsageCard from '~/components/card/Fifthsage'
+import YhCard from '~/components/card/Yh'
+import HongUiCard from '~/components/card/HongUi'
 
 export default {
   components: {
     FifthsageCard,
     YhCard,
-    UihongCard
+    HongUiCard
   }
 }
 </script>

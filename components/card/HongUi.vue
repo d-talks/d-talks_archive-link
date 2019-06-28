@@ -1,9 +1,10 @@
 <template>
   <div class="root">
-    <div class="module-card uihong">
-      <div class="card-visual">
-        <img src="https://dummyimage.com/260x200px" alt="card visual image" />
-      </div>
+    <div class="module-card radius-6 uihong">
+      <div
+        class="card-visual img cover"
+        style="background: url('https://dummyimage.com/290x220/00a2ff/fff')"
+      ></div>
       <div class="card-contents">
         <i
           class="icon-svg svg-size dtalks-icons dtalks-icons-icon_article"
@@ -17,10 +18,11 @@
       </div>
     </div>
 
-    <div class="module-card card-size-290 radius-6 uihong2">
-      <div class="card-visual">
-        <img src="https://dummyimage.com/290x220px" alt="card visual image" />
-      </div>
+    <div class="module-card radius-6 uihong2">
+      <div
+        class="card-visual img cover"
+        style="background: url('https://dummyimage.com/290x220/00a2ff/fff')"
+      ></div>
       <div class="card-contents">
         <p class="text-title">황의홍</p>
         <p class="text-sub">
@@ -54,7 +56,7 @@ export default {}
 
 <style lang="scss" scoped>
 .root {
-  width: 260px;
+  width: 100%;
 }
 
 .module-card.uihong {
@@ -68,11 +70,8 @@ export default {}
   margin-bottom: 30px;
 }
 .module-card.uihong .card-visual {
-}
-.module-card.uihong .card-visual img {
-  border-radius: 5px 5px 0px 0px;
-}
-.module-card.uihong .card-contents {
+  width: 100%;
+  height: 210px;
 }
 .module-card.uihong .card-contents .icon-svg {
   position: absolute;
@@ -104,10 +103,6 @@ export default {}
   margin-bottom: 5px;
 }
 
-.card-size-290 {
-  width: 290px;
-  height: auto;
-}
 .radius-6 {
   border-radius: 6px;
   overflow: hidden;
@@ -117,8 +112,8 @@ export default {}
 }
 
 .module-card.uihong2 .card-visual {
-  width: 290px;
-  height: auto;
+  width: 100%;
+  height: 210px;
 }
 .module-card.uihong2 .card-visual img {
   width: 100%;

@@ -4,12 +4,10 @@
     <!-- card-size-nnn : 숫자 수치에 따라 크기보정이 가능하도록 설계 -->
     <!-- group-name = wholee / uihong / 오성 / 지원 / 유네 각 이름 추가하면 UI변경 -->
     <div class="module-card radius-6 yh">
-      <div class="card-visual">
-        <img
-          src="https://dummyimage.com/290x220/00a2ff/fff"
-          alt="card visual image"
-        />
-      </div>
+      <div
+        class="card-visual img cover"
+        style="background: url('https://dummyimage.com/290x220/00a2ff/fff')"
+      ></div>
       <div class="card-contents">
         <div class="text-title">
           박윤혜
@@ -46,7 +44,7 @@ export default {}
 
 <style lang="css" scoped>
 .root {
-  width: 260px;
+  width: 100%;
 }
 .module-text-icon {
     display: inline-block;
@@ -81,8 +79,8 @@ export default {}
     background: #ffffff;
 }
 .module-card.yh .card-visual {
-    width: 290px;
-    height: auto;
+    width: 100%;
+    height: 210px;
 }
 .module-card.yh .card-visual img {
     width: 100%;

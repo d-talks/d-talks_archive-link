@@ -1,13 +1,11 @@
 <template>
   <div class="root">
-    <div class="module-card fifthsage">
+    <div class="module-card radius-6 fifthsage">
       <a href="">
-        <div class="card-visual">
-          <img
-            src="https://dummyimage.com/260x200/00a2ff/fff"
-            alt="card visual image"
-          />
-        </div>
+        <div
+          class="card-visual img cover"
+          style="background: url('https://dummyimage.com/260x200/00a2ff/fff')"
+        ></div>
         <div class="card-contents">
           <p class="text-title">
             조오성
@@ -33,11 +31,13 @@ export default {}
 </script>
 
 <style lang="css" scoped>
-.root {
-  width: 260px;
-}
 .module-card.fifthsage {
   position: relative;
+}
+
+.card-visual {
+width: 100%;
+height: 360px;
 }
 
 .module-card.fifthsage:after {

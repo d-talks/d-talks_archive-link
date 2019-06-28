@@ -1,0 +1,49 @@
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.layout {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  min-width: 0;
+
+  &.wrap {
+    flex-wrap: wrap !important;
+  }
+
+  &.grid-list {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    $width: (100% / 12) * $i;
+
+    position: relative;
+    width: calc(#{$width} - 8px);
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}

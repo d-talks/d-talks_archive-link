@@ -1,0 +1,8 @@
+.img {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+
+  &.cover {
+    background-size: cover !important;
+  }
+}
