@@ -3,7 +3,7 @@
     <div class="layout grid-list wrap">
       <template v-for="i in 20">
         <div :key="i" class="col-3">
-          <yunhye-card></yunhye-card>
+          <younhye-card></younhye-card>
         </div>
       </template>
     </div>
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import YunhyeCard from '~/components/card/Yunhye'
+import YounhyeCard from '~/components/card/youn-hye'
 
 export default {
   components: {
-    YunhyeCard
+    YounhyeCard
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    지원 카드
+    하윤 카드
   </div>
 </template>
 
@@ -8,4 +8,4 @@
 export default {}
 </script>
 
-<style lang="css" scoped></style>
+<style lang="scss" src="./style.scss" scoped></style>

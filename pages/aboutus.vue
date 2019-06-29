@@ -8,10 +8,10 @@
           <ohsung-card></ohsung-card>
         </div>
         <div class="col-3">
-          <yunhye-card></yunhye-card>
+          <younhye-card></younhye-card>
         </div>
         <div class="col-3">
-          <hong-ui-card></hong-ui-card>
+          <ui-hong-card></ui-hong-card>
         </div>
       </div>
     </div>
@@ -19,29 +19,17 @@
 </template>
 
 <script>
-import OhsungCard from '~/components/card/Ohsung'
-import YunhyeCard from '~/components/card/Yunhye'
-import HongUiCard from '~/components/card/HongUi'
+import OhsungCard from '~/components/card/oh-sung'
+import YounhyeCard from '~/components/card/youn-hye'
+import UiHongCard from '~/components/card/ui-hong'
 
 export default {
   components: {
     OhsungCard,
-    YunhyeCard,
-    HongUiCard
+    YounhyeCard,
+    UiHongCard
   }
 }
 </script>
 
-<style lang="scss" scoped>
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  > li {
-    margin: 0.5rem;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
