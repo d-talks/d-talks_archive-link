@@ -10,7 +10,7 @@
       ></div>
       <div class="card-contents">
         <div class="text-title">
-          박윤혜
+          박윤혜123456789
         </div>
         <div class="text-sub">
           디자이너 / 엔트리
