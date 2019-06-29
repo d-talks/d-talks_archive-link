@@ -1,8 +1,8 @@
-# nuxt-express-test
+# D talks link archive
 
-> My excellent Nuxt.js project
+> 디톡스 사이드 프로젝트
 
-## Build Setup
+## 설정하기
 
 ``` bash
 # install dependencies
@@ -11,12 +11,4 @@ $ yarn install
 # serve with hot reload at localhost:3000
 $ yarn run dev
 
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+open http://localhost:3000
