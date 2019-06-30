@@ -13,6 +13,7 @@ $ yarn run dev
 
 open http://localhost:3000
 ```
+ready to work 😎
 
 ## 작업하기
 ``` bash
@@ -21,9 +22,8 @@ $ git pull origin/master
 
 # 마스터 변경사항 내 브랜치에 합치기
 $ git merge [내 브랜치] master
-
-let\`s get it !
 ```
+let`s get it ! 🚀
 
 ## 작업내용 반영하기
 
@@ -36,6 +36,6 @@ $ git commit -am [커밋 메시지]
 
 # 변경 내용을 push
 $ git push origin/[내 브랜치]
-
-good job !
 ```
+
+good job ! 👍
