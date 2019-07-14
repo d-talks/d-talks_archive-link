@@ -2,7 +2,7 @@
   <style-guide base-path="/styleguide/hye-yun">
     <template v-slot:content>
       <div class="root">
-        혜윤의 레이아웃
+        마윤의 레이아웃
       </div>
     </template>
   </style-guide>

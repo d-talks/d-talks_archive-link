@@ -10,7 +10,7 @@
           class="icon-svg svg-size dtalks-icons dtalks-icons-icon_article"
           style="width: 50px; height: 50px;"
         ></i>
-        <p class="text-title">황의홍</p>
+        <p class="text-title">황의홍 만세!</p>
         <p class="text-sub">Sub script for this website</p>
       </div>
       <div class="card-footer">

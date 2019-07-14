@@ -2,7 +2,7 @@
   <style-guide base-path="/styleguide/ui-hong">
     <template v-slot:content>
       <div class="root">
-        의홍의 레이아웃
+        의홍~의 레이아웃
       </div>
     </template>
   </style-guide>
