@@ -2,7 +2,7 @@
   <style-guide base-path="/styleguide/ji-won">
     <template v-slot:content>
       <div class="root">
-        지원의 레이아웃
+        지원의 레이아웃! :-)
       </div>
     </template>
   </style-guide>
