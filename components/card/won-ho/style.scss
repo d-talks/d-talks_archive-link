@@ -1,0 +1,24 @@
+/* JW S */
+.card-size-454 {
+    width: 454px;
+}
+.module-card.jw {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.module-card.jw .card-visual {
+    width: 454px;
+    height: 630px;
+    overflow: hidden;
+}
+.module-card.jw .card-contents {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 454px;
+    height: auto;
+    padding: 38px 50px 40px;
+    background: pink;
+}
+/* JW E */
