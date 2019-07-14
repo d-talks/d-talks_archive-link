@@ -2,7 +2,7 @@
   <style-guide base-path="/styleguide/youn-hye">
     <template v-slot:content>
       <div class="root">
-        윤혜의 레이아웃
+        윤혜의 레이아웃 룰루랄라
       </div>
     </template>
   </style-guide>
