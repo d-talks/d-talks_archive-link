@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    원호 카드 Hellow
+    원호 카드 Hellow!!!
   </div>
 </template>
 
