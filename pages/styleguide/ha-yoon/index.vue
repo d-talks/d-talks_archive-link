@@ -1,8 +1,8 @@
 <template>
-  <style-guide base-path="/styleguide/hye-yun">
+  <style-guide base-path="/styleguide/ha-yoon">
     <template v-slot:content>
       <div class="root">
-        혜윤의 레이아웃!!
+        하윤이의 레이아웃!!
       </div>
     </template>
   </style-guide>

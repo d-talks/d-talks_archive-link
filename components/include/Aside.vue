@@ -13,23 +13,18 @@
       <li class="list__item h4">
         <a href="/styleguide/won-ho">styleguide</a>
         <ul class="list__sub">
+          <li class="list__item h5">- <a href="/styleguide/won-ho">원호</a></li>
           <li class="list__item h5">
-            - <a href="/styleguide/won-ho">wonho</a>
+            - <a href="/styleguide/oh-sung">오성</a>
           </li>
           <li class="list__item h5">
-            - <a href="/styleguide/oh-sung">ohsung</a>
+            - <a href="/styleguide/youn-hye">윤헤</a>
           </li>
           <li class="list__item h5">
-            - <a href="/styleguide/youn-hye">younhye</a>
+            - <a href="/styleguide/ui-hong">의홍</a>
           </li>
           <li class="list__item h5">
-            - <a href="/styleguide/ji-won">jiwon</a>
-          </li>
-          <li class="list__item h5">
-            - <a href="/styleguide/ui-hong">uihong</a>
-          </li>
-          <li class="list__item h5">
-            - <a href="/styleguide/hye-yun">hyeyun</a>
+            - <a href="/styleguide/ha-yoon">하윤</a>
           </li>
         </ul>
       </li>
