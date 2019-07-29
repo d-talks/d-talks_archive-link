@@ -10,9 +10,7 @@ metadata:
     traefik.frontend.redirect.replacement: https://arvhive.d-tarks-org/$${1}
 spec:
   rules:
-    - host:
-        - archive.d-talks.org
-        - d-tarks-org
+    - host: archive.d-talks.org, d-tarks-org
       http:
         paths:
           - path: /
