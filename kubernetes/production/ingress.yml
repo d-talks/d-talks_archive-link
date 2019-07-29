@@ -6,9 +6,13 @@ metadata:
     kubernetes.io/ingress.class: traefik
     traefik.frontend.passHostHeader: 'false'
     traefik.frontend.priority: '1'
+    traefik.frontend.redirect.regex: ^https?://d-tarks-org/(.*)
+    traefik.frontend.redirect.replacement: https://arvhive.d-tarks-org/$${1}
 spec:
   rules:
-    - host: plus.caredoc.kr
+    - host:
+        - archive.d-talks.org
+        - d-tarks-org
       http:
         paths:
           - path: /
