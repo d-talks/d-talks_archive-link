@@ -4,13 +4,14 @@ metadata:
   name: archive-app
   annotations:
     kubernetes.io/ingress.class: traefik
+    # kubernetes.io/allowed-hosts: archive.d-talks.org, d-talks.org
     traefik.frontend.passHostHeader: 'false'
     traefik.frontend.priority: '1'
     traefik.frontend.redirect.regex: ^https?://d-talks-org/(.*)
     traefik.frontend.redirect.replacement: https://arvhive.d-talks-org/$${1}
 spec:
   rules:
-    - host: 'archive.d-talks.org, d-talks.org'
+    - host: archive.d-talks.org
       http:
         paths:
           - path: /
