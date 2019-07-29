@@ -1,19 +1,47 @@
 steps:
-  - name: 'gcr.io/cloud-builders/docker'
-    args:
-      [
-        'build',
-        '-t',
-        'gcr.io/d-talks-243604/d-talks_link-archive:$SHORT_SHA',
-        '.',
-      ]
-  - name: 'gcr.io/cloud-builders/docker'
+  - id: 'build'
+    name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/${_IMG_NAME}:$REVISION_ID', '.']
+  - id: 'tagging'
+    name: 'gcr.io/cloud-builders/docker'
     args:
       [
         'tag',
-        'gcr.io/d-talks-243604/d-talks_link-archive:$SHORT_SHA',
-        'gcr.io/d-talks-243604/d-talks_link-archive:latest',
+        'gcr.io/$PROJECT_ID/${_IMG_NAME}:$REVISION_ID',
+        'gcr.io/$PROJECT_ID/${_IMG_NAME}:latest',
       ]
-  # - name: 'gcr.io/cloud-builders/gcloud'
-  #   args: ['compute', 'ssh', 'cto_onestepmore_co_kr@achive-application', '--zone', 'asia-northeast1-b', '--command', 'docker service update dtalks_archive_app --force']
-images: ['gcr.io/d-talks-243604/d-talks_link-archive:latest']
+  # - id: 'test'
+  #   name: 'unit test'
+  #   entrypoint: /bin/sh
+  #   args:
+  #     - -c
+  #     - 'unit test'
+  - id: 'publish'
+    name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/${_IMG_NAME}:$REVISION_ID']
+  - id: 'deploy'
+    name: 'gcr.io/cloud-builders/gcloud'
+    env:
+      - 'CLOUDSDK_COMPUTE_ZONE=${_CLOUDSDK_COMPUTE_ZONE}'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLOUDSDK_CONTAINER_CLUSTER}'
+      - 'KUBECONFIG=/kube/config'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        CLUSTER=${_CLOUDSDK_CONTAINER_CLUSTER}
+        PROJECT=$$(gcloud config get-value core/project)
+        ZONE=${_CLOUDSDK_COMPUTE_ZONE}
+
+        gcloud container clusters get-credentials "$${CLUSTER}" \
+          --project "$${PROJECT}" \
+          --zone "$${ZONE}"
+
+        sed -i 's|gcr.io/cloud-solutions-images/${_IMG_NAME}:.*|gcr.io/$PROJECT_ID/${_IMG_NAME}:$REVISION_ID|g' ./kubernetes/${_ENV}/deployment.yml
+
+        cat ./kubernetes/${_ENV}/deployment.yml
+
+        echo $(gcloud auth list)
+
+        kubectl get ns ${_ENV} || kubectl create ns ${_ENV}
+        kubectl apply --namespace ${_ENV} --recursive -f kubernetes/${_ENV}
