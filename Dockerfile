@@ -1,12 +1,14 @@
-FROM node:8
+FROM node:latest
 
-WORKDIR /usr/src/app
+ENV HOST 0.0.0.0
+ENV APP_ROOT /usr/src/app
+
+RUN mkdir ${APP_ROOT}
+WORKDIR ${APP_ROOT}
 
 COPY . .
 
-RUN yarn
-RUN yarn run build
-
+RUN yarn && yarn run build
 RUN npm install pm2 -g
 
 EXPOSE 3000

@@ -3,17 +3,20 @@
     <!-- module card basic = width: 260px; -->
     <!-- card-size-nnn : 숫자 수치에 따라 크기보정이 가능하도록 설계 -->
     <!-- group-name = wholee / uihong / 오성 / 지원 / 유네 각 이름 추가하면 UI변경 -->
-    <div class="module-card radius-6 yh">
+    <div class="module-card card-col1 hy" style="margin-bottom: 48px;">
       <div
         class="card-visual img cover"
-        style="background: url('https://dummyimage.com/290x220/00a2ff/fff')"
+        style="background: url('https://dummyimage.com/224x224/4faaff/fff')"
       ></div>
       <div class="card-contents">
+        <div class="text-tagarea">
+          <a href="#" class="hashtag">#self</a>
+        </div>
         <div class="text-title">
-          박윤혜123456789
+          The Gifts of Fatness
         </div>
         <div class="text-sub">
-          디자이너 / 엔트리
+          I know how hard it is to walk through the world in a fat body.
         </div>
         <div
           class="icon-favicon"
@@ -22,18 +25,10 @@
       </div>
       <div class="card-footer">
         <div class="text-writer">
-          <span class="writer-by">by</span>
+          <i class="icon icon-behance"></i>
           <span class="writer-name">Little Little Star</span>
         </div>
-        <span
-          class="module-text-icon icon-30 radius-15"
-          style="background:#ddd;"
-        >
-          <em style="color: #000;">Category</em>
-        </span>
       </div>
-
-      <i class="heart outline icon"></i>
     </div>
   </div>
 </template>

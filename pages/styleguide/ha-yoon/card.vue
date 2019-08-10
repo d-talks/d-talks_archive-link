@@ -1,19 +1,19 @@
 <template>
-  <style-guide base-path="/styleguide/ji-won">
+  <style-guide base-path="/styleguide/won-ho">
     <template v-slot:content>
-      <div class="root">
-        지원의 레이아웃
-      </div>
+      <card></card>
     </template>
   </style-guide>
 </template>
 
 <script>
 import Template from '~/components/styleguide/Template'
+import Card from '~/components/card/ha-yoon'
 
 export default {
   components: {
-    'style-guide': Template
+    'style-guide': Template,
+    Card
   }
 }
 </script>

@@ -4,9 +4,21 @@
   margin: 0;
 
   &__item {
-    padding: 4px 0;
+    padding: 0 4px;
+    margin: 8px 0;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__sub {
-    }
+    margin: 4px 0;
+  }
+
+  &.horizontal {
+    display: flex;
+  }
 }

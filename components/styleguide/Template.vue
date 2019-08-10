@@ -8,7 +8,7 @@
         <a :href="`${basePath}/card`">card</a>
       </li>
     </ul>
-    <div class="">
+    <div class="mt-5">
       <slot name="content"> </slot>
     </div>
   </div>

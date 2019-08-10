@@ -1,0 +1,128 @@
+.root {
+width: 100%;
+}
+
+.module-text-icon {
+display: inline-block;
+min-width: 40px;
+font-size: 14px;
+font-weight: bold;
+padding: 0 12px;
+background: #ffffff;
+
+}
+
+.icon-30 {
+height: 30px;
+line-height: 30px;
+text-align: center;
+}
+
+.radius-15 {
+border-radius: 15px;
+}
+
+/* hy S */
+// .card-size-290 {
+// width: 290px;
+// height: auto;
+// }
+
+.card-col1 {
+    width: 224px;
+    height: auto;
+}
+.card-col2 {
+    width: 464px;
+    height: auto;
+}
+.card-col3 {
+    width: 704px;
+    height: auto;
+}
+
+.radius-6 {
+border-radius: 6px;
+overflow: hidden;
+}
+
+.module-card.hy {
+    background: #ffffff;
+    border-top: 4px solid #000;
+    padding-top: 12px;
+}
+/* 마윤님이 가상요소없이 보더를 만듦 */
+// .module-card.hy::before {
+//     content: "";
+//     width: 100%;
+//     height: 4px;
+//     background: #000;
+//     display: block;
+//     margin-bottom: 12px;
+// }
+
+.module-card.hy .card-visual {
+    width: 100%;
+    height: 224px;
+}
+
+.module-card.hy .card-visual img {
+    width: 100%;
+    overflow: hidden
+}
+
+.module-card.hy .card-contents {
+    padding: 16px 20px 23px;
+    position: relative;
+}
+.module-card.hy .text-title {
+    font-size: 28px;
+    line-height: 1.18;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.module-card.hy .text-sub {
+    display:-webkit-box;
+    height: 42px;
+    font-size: 13px;
+    line-height: 1.62;
+    font-weight: normal;
+    color: #000000;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.module-card.hy .text-tagarea {
+    margin-bottom: 4px;
+}
+.module-card.hy .hashtag {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.62;
+    letter-spacing: 0.8px;
+    color: #000;
+}
+
+.module-card.hy .card-footer {
+    padding: 12px 20px;
+    position: relative;
+    border-top: 1px solid #000;
+}
+
+.module-card.hy .writer-name {
+    vertical-align: middle;
+    font-size: 10px;
+    color: #000;
+}
+
+/* 이원호가 아이콘 모듈 만들기 */
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 8px;
+    background: red;
+}
