@@ -1,133 +1,76 @@
+/* new card design */
+
 .module-card.uihong {
-  width: 260px;
-  min-height: 250px;
-  display: block;
-  background: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  margin-bottom: 30px;
+  height: 360px;
+  float: left;
 }
 
 .module-card.uihong .card-visual {
-  width: 100%;
-  height: 210px;
 }
 
-.module-card.uihong .card-contents .icon-svg {
+.module-card.uihong .card-visual img {
+  width: 100%;
+}
+
+.module-card.uihong .card-visual .gradient {
   position: absolute;
-  right: 20px;
-  bottom: 40px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+.module-card.uihong .card-contents {
+}
+
+.module-card.uihong .card-contents .favicon {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 5px;
+  background-color: #333;
 }
 
 .module-card.uihong .card-contents .text-title {
-  color: #333333;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 15px 10px;
+  position: absolute;
+  top: 220px;
+  left: 14px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #fff;
 }
 
 .module-card.uihong .card-contents .text-sub {
-  color: #999999;
-  font-size: 13px;
-  font-weight: 400;
-  padding: 0 10px;
-}
-
-.module-card.uihong .card-footer {}
-
-.module-card.uihong .card-footer .text-footer {
-  color: #999999;
-  font-size: 11px;
-  font-weight: 400;
-  padding: 10px;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.radius-6 {
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.module-card.uihong2 {
-  background: #fff;
-}
-
-.module-card.uihong2 .card-visual {
-  width: 100%;
-  height: 210px;
-}
-
-.module-card.uihong2 .card-visual img {
-  width: 100%;
-}
-
-.module-card.uihong2 .card-contents {
-  padding: 40px 14px;
-  position: relative;
-}
-
-.module-card.uihong2 .card-contents .text-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.module-card.uihong2 .card-contents .text-sub {
+  position: absolute;
+  top: 286px;
+  left: 14px;
   font-size: 14px;
   font-weight: normal;
-  color: #000;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-.module-card.uihong2 .card-contents .icon-favicon {
-  width: 50px;
-  height: 50px;
-  border-radius: 15px;
-  background-color: #000;
-  background-size: 50px 50px;
-  overflow: hidden;
+.module-card.uihong .card-footer {
+}
+
+.module-card.uihong .card-footer .tags {
   position: absolute;
-  top: -25px;
+  bottom: 14px;
   left: 14px;
 }
 
-.module-card.uihong2 .card-footer {
-  padding: 0 14px 14px;
-  position: relative;
-}
-
-.module-card.uihong2 .card-footer .text-writer {
-  line-height: 30px;
+.module-card.uihong .card-footer .tags .tag {
   font-size: 12px;
-  font-weight: 500;
-}
-
-.module-card.uihong2 .card-footer .text-writer .writer-by {}
-
-.module-card.uihong2 .card-footer .text-writer .writer-name {}
-
-.module-card.uihong2 .card-footer .module-text-icon {
-  display: inline-block;
-  min-width: 40px;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 0 12px;
-  background-color: #ffffff;
-  position: absolute;
-  top: 0;
-  right: 14px;
-}
-
-.module-card.uihong2 .card-footer .icon-30 {
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.module-card.uihong2 .card-footer .radius-15 {
-  border-radius: 15px;
+  font-weight: normal;
+  color: #fff;
+  margin-right: 12px;
 }

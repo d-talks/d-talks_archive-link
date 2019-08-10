@@ -50,5 +50,17 @@
     "sass-loader": "^7.1.0",
     "vue-jest": "^3.0.3",
     "webfonts-generator": "^0.4.0"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint  --ext .js,.vue --ignore-path .gitignore --fix",
+      "git add",
+      "jest --bail --findRelatedTests"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

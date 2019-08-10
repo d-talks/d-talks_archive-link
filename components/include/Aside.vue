@@ -18,7 +18,7 @@
             - <a href="/styleguide/oh-sung">오성</a>
           </li>
           <li class="list__item h5">
-            - <a href="/styleguide/youn-hye">윤헤</a>
+            - <a href="/styleguide/youn-hye">윤혜</a>
           </li>
           <li class="list__item h5">
             - <a href="/styleguide/ui-hong">의홍</a>
