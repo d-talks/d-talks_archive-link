@@ -23,11 +23,11 @@ spec:
         - name: archive-app
           image: gcr.io/cloud-solutions-images/d-talks_link-archive:tag
           imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
       imagePullSecrets:
         - name: var-registry-secret-production
-      ports:
-        - containerPort: 8080
-      readinessProbe:
-        httpGet:
-          path: /
-          port: 8080
