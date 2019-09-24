@@ -5,7 +5,12 @@ metadata:
   labels:
     app: archive-app
 spec:
-  replicas: 1
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 25%
   selector:
     matchLabels:
       app: archive-app
@@ -20,3 +25,9 @@ spec:
           imagePullPolicy: Always
       imagePullSecrets:
         - name: var-registry-secret-production
+      ports:
+        - containerPort: 8080
+      readinessProbe:
+        httpGet:
+          path: /
+          port: 8080
